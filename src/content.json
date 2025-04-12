@@ -1,0 +1,15 @@
+{
+  "es": [
+    { "title": "Acerca de Mí" },
+    { "content": "Soy " },
+    { "title": "Mis Proyectos" },
+    { "content": "Soy " },
+    { "title": "Certificados" },
+    { "content": "Soy " }
+  ],
+  "en": [
+    { "title": "About Me" },
+    { "title": "My Projects" },
+    { "title": "Certificates" }
+  ]
+}

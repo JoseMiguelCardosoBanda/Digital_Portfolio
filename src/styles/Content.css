@@ -1,0 +1,86 @@
+#main_photo {
+  animation-duration: 2s;
+  animation-name: slide-in;
+}
+
+#about {
+  animation-duration: 2s;
+  animation-name: slide-inTitle;
+}
+
+#pokedex {
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+#pokedex:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+#randomData {
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+#randomData:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+#adminPanel {
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+#adminPanel:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+#javascript {
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+#javascript:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+#itransition {
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+#itransition:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 0 -150vw;
+    scale: 200% 1;
+  }
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+@keyframes slide-inTitle {
+  from {
+    translate: -150vw 0;
+    scale: 200% 1;
+  }
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
