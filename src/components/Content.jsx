@@ -4,8 +4,10 @@ import portrait from "../images/Foto.png";
 import pokedex from "../images/reactPokedex.png";
 import rndmData from "../images/randomDataGen.png";
 import adminPanel from "../images/controlPanel.png";
+import rockPaper from "../images/rockPaperScissors.png";
 import jsCert from "../images/javascriptCert.png";
 import itrCert from "../images/itransitionCert.png";
+import sqlCert from "../images/sqlCert.png";
 import "../styles/Content.css";
 
 function Content({ showModal, certModal }) {
@@ -81,7 +83,19 @@ function Content({ showModal, certModal }) {
                       onClick={() => showModal("admin")}
                     />
                   </div>
-                  <div className="col py-4">Próximamente Más Proyectos...</div>
+                  <div className="col py-4">
+                    <img
+                      id="rockPaper"
+                      className="rounded"
+                      src={rockPaper}
+                      alt="Rock Paper Scissors JavaScript"
+                      width="350px"
+                      onClick={() => showModal("rock")}
+                    />
+                  </div>
+                  <div className="col py-4">
+                    <h6>Más Proyectos Próximamente...</h6>
+                  </div>
                 </div>
               </div>
             </div>
@@ -119,8 +133,18 @@ function Content({ showModal, certModal }) {
                       onClick={() => certModal("itr")}
                     />
                   </div>
+                  <div className="col">
+                    <img
+                      id="sql"
+                      className="rounded"
+                      alt="SQL Course"
+                      src={sqlCert}
+                      width="350px"
+                      onClick={() => certModal("sql")}
+                    />
+                  </div>
                   <div className="col py-4">
-                    Próximamente Más Certificados...
+                    <h6>Próximamente Más Certificados...</h6>
                   </div>
                 </div>
               </div>
@@ -194,7 +218,19 @@ function Content({ showModal, certModal }) {
                       onClick={() => showModal("admin")}
                     />
                   </div>
-                  <div className="col py-4">More Projects Coming Soon...</div>
+                  <div className="col py-4">
+                    <img
+                      id="rockPaper"
+                      className="rounded"
+                      src={rockPaper}
+                      alt="Rock Paper Scissors JavaScript"
+                      width="350px"
+                      onClick={() => showModal("rock")}
+                    />
+                  </div>
+                  <div className="col py-4">
+                    <h6>More Projects Coming Soon...</h6>
+                  </div>
                 </div>
               </div>
             </div>
@@ -232,8 +268,18 @@ function Content({ showModal, certModal }) {
                       onClick={() => certModal("itr")}
                     />
                   </div>
+                  <div className="col">
+                    <img
+                      id="sql"
+                      className="rounded"
+                      alt="SQL Course"
+                      src={sqlCert}
+                      width="350px"
+                      onClick={() => certModal("sql")}
+                    />
+                  </div>
                   <div className="col py-4">
-                    More Certificates Coming Soon...
+                    <h6>More Certificates Coming Soon...</h6>
                   </div>
                 </div>
               </div>

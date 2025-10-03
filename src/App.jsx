@@ -6,6 +6,7 @@ import Content from "./components/Content";
 import PhotoModal from "./components/PhotoModal";
 import jsCert from "./images/javascriptCert.png";
 import itrCert from "./images/itransitionCert.png";
+import sqlCert from "./images/sqlCert.png";
 
 function App() {
   const { lang, setLang } = LangHand();
@@ -61,6 +62,17 @@ function App() {
             : `Deployed Project In Vercel: <a href="https://admin-panel-ashy-seven.vercel.app" target="_blank">Visit</a>`;
         createPlayer("panel");
         break;
+      case "rock":
+        modalTitle.innerHTML =
+          lang === "spanish"
+            ? "Juego de Piedra, Papel o Tijeras En JavaScript"
+            : "Rock, Paper, Scissors Game In JavaScript";
+        gitLink.innerHTML =
+          lang === "spanish"
+            ? `Repositorio en GitHub: <a href="https://github.com/JoseMiguelCardosoBanda/RockPaperScissors_JavaScript" target="_blank">Visitar</a>`
+            : `GitHub Repo: <a href="https://github.com/JoseMiguelCardosoBanda/RockPaperScissors_JavaScript" target="_blank">Visit</a>`;
+        vercLink.innerHTML = "";
+        createPlayer("rock");
     }
     createModal.show();
   }
@@ -98,6 +110,16 @@ function App() {
         );
         player.appendChild(ifrad);
         break;
+      case "rock":
+        const ifrRPS = document.createElement("iframe");
+        ifrRPS.setAttribute("id", "staticPlayer");
+        ifrRPS.setAttribute("type", "text/html");
+        ifrRPS.setAttribute(
+          "src",
+          "//www.youtube.com/embed/oPrLZiDE6rQ?enablejsapi=1&autoplay=1"
+        );
+        player.appendChild(ifrRPS);
+        break;
     }
     var staticPlayer;
     const myModal = document.getElementById("modalShowcase");
@@ -114,8 +136,16 @@ function App() {
   function certModal(cert) {
     const show = new bootstrap.Modal(document.getElementById("certModal"));
     const modalBody = document.getElementById("modalBody");
-    modalBody.innerHTML = `<img src=${cert === "js" ? jsCert : itrCert} width=${
-      cert === "js" ? "900px" : "700px"
+    var imgSrc = "";
+    if (cert === "js") {
+      imgSrc = jsCert;
+    } else if (cert === "sql") {
+      imgSrc = sqlCert;
+    } else {
+      imgSrc = itrCert;
+    }
+    modalBody.innerHTML = `<img src=${imgSrc} width=${
+      cert === "js" || "sql" ? "900px" : "700px"
     } />`;
     show.show();
   }

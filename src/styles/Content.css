@@ -41,6 +41,17 @@
   transition: 0.3s ease-in;
 }
 
+#rockPaper {
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+#rockPaper:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
 #javascript {
   transition: 0.3s;
   transition-timing-function: ease-in;
@@ -58,6 +69,17 @@
 }
 
 #itransition:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+#sql {
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+#sql:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: 0.3s ease-in;
