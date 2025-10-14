@@ -8,6 +8,7 @@ import rockPaper from "../images/rockPaperScissors.png";
 import jsCert from "../images/javascriptCert.png";
 import itrCert from "../images/itransitionCert.png";
 import sqlCert from "../images/sqlCert.png";
+import testerCert from "../images/testerCert.png";
 import "../styles/Content.css";
 
 function Content({ showModal, certModal }) {
@@ -133,7 +134,7 @@ function Content({ showModal, certModal }) {
                       onClick={() => certModal("itr")}
                     />
                   </div>
-                  <div className="col">
+                  <div className="col py-4">
                     <img
                       id="sql"
                       className="rounded"
@@ -141,6 +142,16 @@ function Content({ showModal, certModal }) {
                       src={sqlCert}
                       width="350px"
                       onClick={() => certModal("sql")}
+                    />
+                  </div>
+                  <div className="col py-4">
+                    <img
+                      id="tester"
+                      className="rounded"
+                      alt="Tester Course"
+                      src={testerCert}
+                      width="350px"
+                      onClick={() => certModal("tester")}
                     />
                   </div>
                   <div className="col py-4">
@@ -268,7 +279,7 @@ function Content({ showModal, certModal }) {
                       onClick={() => certModal("itr")}
                     />
                   </div>
-                  <div className="col">
+                  <div className="col py-4">
                     <img
                       id="sql"
                       className="rounded"
@@ -276,6 +287,16 @@ function Content({ showModal, certModal }) {
                       src={sqlCert}
                       width="350px"
                       onClick={() => certModal("sql")}
+                    />
+                  </div>
+                  <div className="col py-4">
+                    <img
+                      id="tester"
+                      className="rounded"
+                      alt="Tester Course"
+                      src={testerCert}
+                      width="350px"
+                      onClick={() => certModal("tester")}
                     />
                   </div>
                   <div className="col py-4">

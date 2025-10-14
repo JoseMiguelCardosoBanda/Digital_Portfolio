@@ -85,6 +85,17 @@
   transition: 0.3s ease-in;
 }
 
+#tester {
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+#tester:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
 @keyframes slide-in {
   from {
     translate: 0 -150vw;

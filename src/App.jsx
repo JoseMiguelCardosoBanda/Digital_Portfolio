@@ -7,6 +7,7 @@ import PhotoModal from "./components/PhotoModal";
 import jsCert from "./images/javascriptCert.png";
 import itrCert from "./images/itransitionCert.png";
 import sqlCert from "./images/sqlCert.png";
+import testerCert from "./images/testerCert.png";
 
 function App() {
   const { lang, setLang } = LangHand();
@@ -141,11 +142,13 @@ function App() {
       imgSrc = jsCert;
     } else if (cert === "sql") {
       imgSrc = sqlCert;
+    } else if (cert === "tester") {
+      imgSrc = testerCert;
     } else {
       imgSrc = itrCert;
     }
     modalBody.innerHTML = `<img src=${imgSrc} width=${
-      cert === "js" || "sql" ? "900px" : "700px"
+      cert === "js" || "sql" || "tester" ? "900px" : "700px"
     } />`;
     show.show();
   }
