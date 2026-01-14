@@ -5,6 +5,7 @@ import pokedex from "../images/reactPokedex.png";
 import rndmData from "../images/randomDataGen.png";
 import adminPanel from "../images/controlPanel.png";
 import rockPaper from "../images/rockPaperScissors.png";
+import pokedexV2 from "../images/pokedexVersion2.PNG";
 import jsCert from "../images/javascriptCert.png";
 import itrCert from "../images/itransitionCert.png";
 import sqlCert from "../images/sqlCert.png";
@@ -92,6 +93,16 @@ function Content({ showModal, certModal }) {
                       alt="Rock Paper Scissors JavaScript"
                       width="350px"
                       onClick={() => showModal("rock")}
+                    />
+                  </div>
+                  <div className="col">
+                    <img
+                      id="pokedexV2"
+                      className="rounded"
+                      src={pokedexV2}
+                      alt="React Pokedex Version 2"
+                      width="350px"
+                      onClick={() => showModal("pokedex2")}
                     />
                   </div>
                   <div className="col py-4">

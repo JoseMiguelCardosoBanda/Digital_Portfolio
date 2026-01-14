@@ -52,6 +52,17 @@
   transition: 0.3s ease-in;
 }
 
+#pokedexV2 {
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+#pokedexV2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
 #javascript {
   transition: 0.3s;
   transition-timing-function: ease-in;

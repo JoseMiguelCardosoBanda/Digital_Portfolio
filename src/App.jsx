@@ -74,6 +74,22 @@ function App() {
             : `GitHub Repo: <a href="https://github.com/JoseMiguelCardosoBanda/RockPaperScissors_JavaScript" target="_blank">Visit</a>`;
         vercLink.innerHTML = "";
         createPlayer("rock");
+        break;
+      case "pokedex2":
+        modalTitle.innerHTML =
+          lang === "spanish"
+            ? "Proyecto Pokédex Versión 2"
+            : "Pokédex Project Version 2";
+        gitLink.innerHTML =
+          lang === "spanish"
+            ? `Repositorio en GitHub: <a href="https://github.com/JoseMiguelCardosoBanda/Pokedex_v2" target="_blank">Visitar</a>`
+            : `GitHub Repo: <a href="https://github.com/JoseMiguelCardosoBanda/Pokedex_v2" target="_blank">Visit</a>`;
+        vercLink.innerHTML =
+          lang === "spanish"
+            ? `Proyecto Desplegado En Vercel: <a href="https://pokedex-v2-pink.vercel.app" target="_blank">Visitar</a>`
+            : `Deployed Project In Vercel: <a href="https://pokedex-v2-pink.vercel.app" target="_blank">Visit</a>`;
+        createPlayer("pokedex2");
+        break;
     }
     createModal.show();
   }
@@ -120,6 +136,16 @@ function App() {
           "//www.youtube.com/embed/oPrLZiDE6rQ?enablejsapi=1&autoplay=1"
         );
         player.appendChild(ifrRPS);
+        break;
+      case "pokedex2":
+        const ifrp2 = document.createElement("iframe");
+        ifrp2.setAttribute("id", "staticPlayer");
+        ifrp2.setAttribute("type", "text/html");
+        ifrp2.setAttribute(
+          "src",
+          "//www.youtube.com/embed/gBpVHQoEcO4?enablejsapi=1&autoplay=1"
+        );
+        player.appendChild(ifrp2);
         break;
     }
     var staticPlayer;
