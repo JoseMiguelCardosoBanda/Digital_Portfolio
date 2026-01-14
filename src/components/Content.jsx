@@ -250,6 +250,16 @@ function Content({ showModal, certModal }) {
                       onClick={() => showModal("rock")}
                     />
                   </div>
+                  <div className="col">
+                    <img
+                      id="pokedexV2"
+                      className="rounded"
+                      src={pokedexV2}
+                      alt="React Pokedex Version 2"
+                      width="350px"
+                      onClick={() => showModal("pokedex2")}
+                    />
+                  </div>
                   <div className="col py-4">
                     <h6>More Projects Coming Soon...</h6>
                   </div>
